@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+</head>
+
+<body>
+    <div>
+        
+        <script>
+		var comp = parseInt(Math.random() * 100);
+		var user = prompt("Enter the number between 1 to 100");
+		console.log(user);
+
+		while (user != comp) { <!-- user value is not equal-->
+				
+			if (user > comp) { <!--Greater than comp value-->
+				console.log("your guess is: ", user)
+				console.log(`Ur Guess was Higher `);
+				var user = prompt("Try a lower number ");
+			}
+			else {
+				console.log("your guess is: ", user)
+				console.log(`Ur Guess was Lower`);
+				var user = prompt("Try a higher number ️");
+			}
+			
+		}
+
+
+
+        </script>
+    </div>
+</body>
+</html>
